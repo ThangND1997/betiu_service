@@ -2,7 +2,10 @@
   "name": "betiu_service",
   "version": "1.0.0",
   "description": "service film",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && ./node_modules/.bin/tsc && cp package.json ./build/package.json",
