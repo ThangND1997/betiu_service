@@ -11,4 +11,4 @@ if (process.env.NODE_ENV !== "production") {
 }
 dotEnv.config();
 // Bootstrap new app
-new Application().listen(3000);
+new Application().listen(process.env.PORT || 3000);

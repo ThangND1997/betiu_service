@@ -35,7 +35,7 @@ export class Application {
         this.app.use("/", Router);
     }
 
-    public listen(port: number) {
+    public listen(port: any) {
         Promise.all([
             // Database.migration(),
         ])
