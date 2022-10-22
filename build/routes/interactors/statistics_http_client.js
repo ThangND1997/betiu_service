@@ -2,12 +2,20 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const http_client_1 = require("./http_client");
 const ROUTES = {
-    RETIREVE: "https://ophim.cc/_next/data/2uibqhufwNeudgKQPPGsA/tim-kiem.json",
+    LIST: "https://ophim.cc/_next/data/2uibqhufwNeudgKQPPGsA/tim-kiem.json",
+    VIEW: "https://ophim1.com/phim/"
 };
 class StatisticsHttpClient extends http_client_1.default {
-    retrieveTapsStatistics(query) {
+    retrieveListFilm(query) {
         return Promise.resolve(this.send({
-            url: ROUTES.RETIREVE,
+            url: ROUTES.LIST,
+            method: "GET",
+            params: query
+        }));
+    }
+    retrieveViewFilm(query) {
+        return Promise.resolve(this.send({
+            url: `${ROUTES.VIEW}/${query.nameSearch}`,
             method: "GET",
             params: query
         }));
