@@ -19,7 +19,7 @@
       "experimentalDecorators": true,
       "suppressImplicitAnyIndexErrors": true,
       "skipLibCheck": true,
-      "outDir": "./build/",
+      "outDir": "./public/",
       "rootDir": "./src/"
   },
   "include": [

@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && ./node_modules/.bin/tsc && cp package.json ./build/package.json && cp vercel.json ./build/vercel.json && cp .env ./build/.env",
-    "start": "node build/server.js"
+    "start": "node server.js"
   },
   "author": "Thang Nguyen",
   "license": "ISC",
